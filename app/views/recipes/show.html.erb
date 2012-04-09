@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <header>
+    <h1><%= @recipe.name %></h1>
+  </header>
+  <section id="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <%= @recipe.ingredients.html_safe %>
+    </ul>
+  </section>
+  <section id="method">
+    <h2>Method</h2>
+    <ul>
+      <%= @recipe.method.html_safe %>
+    </ul>
+    <%= link_to 'Back', '/home' %> 
+  </section>
+</div>

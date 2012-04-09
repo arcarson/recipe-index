@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <header>
+    <h1>Andy's Recipe Wall</h1>
+  </header>
+  <section class="recipe-catagory">
+    <h2>Savoury Recipes</h2>
+    <ul>
+      <% @recipesSavoury.each do |recipe| %>
+        <li><%= link_to recipe.name, recipe %></li>
+      <% end %>
+    </ul>
+  </section>
+  <section class="recipe-catagory">
+    <h2>Sweet Recipes</h2>
+    <ul>
+      <% @recipesSweet.each do |recipe| %>
+        <li><%= link_to recipe.name, recipe %></li>
+      <% end %>
+    </ul> 
+  </section>
+</div>

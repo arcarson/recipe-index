@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+/****FONT DECLARATIONS****/
+
+@font-face {
+    font-family: 'LHLine1SansThin';
+    src: url('type/lh-line1-sans-thin-webfont.eot');
+    src: url('type/lh-line1-sans-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/lh-line1-sans-thin-webfont.woff') format('woff'),
+         url('type/lh-line1-sans-thin-webfont.ttf') format('truetype'),
+         url('type/lh-line1-sans-thin-webfont.svg#LHLine1SansThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplayRegular';
+    src: url('type/playfairdisplay-regular-webfont.eot');
+    src: url('type/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('type/playfairdisplay-regular-webfont.ttf') format('truetype'),
+         url('type/playfairdisplay-regular-webfont.svg#PlayfairDisplayRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/****COMMON STYLES & CLASSES****/
+
+body {
+  background: #5fc9f0;
+  font-family: 'LHLine1SansThin', helvetica, arial, sans-serif;
+  color: #6a6a6a;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;  
+}
+
+h1,h2 {
+  font-family: 'PlayfairDisplayRegular' serif;
+  font-weight: lighter;
+}
+
+h2 {
+  background: url('../images/header-background.png') no-repeat;
+  color: #fff;
+  margin: 0px;
+  width: 519px;
+  height: 61px;
+  position: relative;
+  right: 49px;
+  font-size: 35px;
+  padding: 0px 0px 0px 48px;
+  line-height: 1.4em;
+}
+
+a {
+  text-decoration: none;
+  color: #6A6A6A;
+  padding: 1px 13px;
+  border-radius: 10px;
+}
+
+a:hover {
+  background: #E8E8E9;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.wrapper {
+  width: 460px;
+  margin: 0px auto;
+  background: #fff;
+  padding: 0px 20px 40px;
+  -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);
+}
+
+header {
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+header h1 {
+  font-size: 46px;
+  text-align: center;
+  border-bottom: solid 2px #349cbf;
+  padding-bottom: 10px;
+}
+
+/****HOMEPAGE STYLES****/
+
+.recipe-catagory ul {
+  padding-left: 27px;
+}
+
+#method li {
+  margin-bottom: 20px;
+  padding-right: 40px;
+  text-align: justify;
+}
+
+.new-recipe {
+  margin-left: -10px;
+}
